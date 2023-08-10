@@ -1,0 +1,32 @@
+{
+  "name": "template",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "description": "插件开发脚手架",
+  "permissions": ["tabs", "notifications", "storage"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.tapd.cn/*"],
+      "css": ["content-script.css"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content-script.css"],
+      "matches": ["https://www.tapd.cn/*"]
+    }
+  ],
+  "icons": {
+    "16": "/logo.png",
+    "32": "/logo.png",
+    "48": "/logo.png",
+    "128": "/logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

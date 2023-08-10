@@ -1,0 +1,38 @@
+{
+  "name": "extension",
+  "version": ".0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "tailwindcss": "^3.3.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "3.11.2"
+  },
+  "dependencies": {
+    "antd": "^5.8.2",
+    "axios": "^1.1.3",
+    "clipboard": "^2.0.11",
+    "dayjs": "^1.11.5",
+    "jquery": "^3.6.1",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ssestream": "^1.1.0",
+    "store": "^2.0.12"
+  }
+}
